@@ -55,7 +55,6 @@ async function loginUser(req, res) {
         message: "Invalid email or password",
       });
     }
-    console.log("JWT Secret:", process.env.JWT_SECRET);
 
     const token = jwt.sign(
       {
